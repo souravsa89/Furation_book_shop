@@ -2,12 +2,12 @@ import React, { useState, useEffect, useContext } from "react";
 import { Context } from "../context/Context";
 import { Link } from "react-router-dom";
 import StripeCheckout from "react-stripe-checkout";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const BookCartCheckOut = () => {
   const { books, carts } = useContext(Context);
   const [totalPrice, setTotalPrice] = useState(0);
-  const stripeKey = "pk_test_VvWjqy13EI2MSDgDxy3b5jbx00KrrL41yi";
+  const stripeKey = "pk_test_51N85LTSCj0q5tvNeAOxKEEBFizYZKoSEIPk8xXxgNjiYXqvhkrOTFDkKLmq4a8so24jS0yWp4Ju1UJsWAq5XAsRm009AktTsmV";
   const shippingCost = 5;
 
   const onToken = (token) => {

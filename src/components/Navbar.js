@@ -12,7 +12,7 @@ const Navbar = () => {
           style={{
             textDecoration: "none",
             color: "#282C34",
-            fontWeight: 500,
+            fontWeight: 800,
             fontSize: "2rem",
             fontFamily: "Source Code Pro, monospace"
           }}
@@ -21,12 +21,12 @@ const Navbar = () => {
           Book_Shop
         </Link>
 
-        <nav className="my-2 my-md-0 mr-md-3">
-          <Link className="p-2 text-dark" to="/about">
+        <nav className="my-0 my-md-0.0 mr-md-4 ">
+          <Link className="p-3 text-dark h4 font-weight-500" to="/about">
             About
           </Link>
         </nav>
-        <Link className="btn btn-outline-primary" to="/book-cart">
+        <Link className="btn btn-outline-primary font-weight-bold" to="/book-cart">
           Book Cart (
           <span style={{ color: "#FF0000" }}>
             {carts.length !== 0 ? carts.length : 0}

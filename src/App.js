@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Books from "./components/Books";
 import About from "./components/About";
-import BookCart from "./components/BookCart";
+import Cart from "./components/Cart";
 import BookDetails from "./components/BookDetails";
 
 
@@ -17,18 +17,15 @@ function App() {
       <div className="App">
         <Navbar />
         <Switch>
-          <Route
-            exact
-            path="/"
-            render={() => (
-              <Fragment>
+          <Route exact path="/" render={() => (
+              <>
                 <Header />
                 <Books />
-              </Fragment>
+              </>
             )}
           />
           <Route path="/about" component={About} />
-          <Route path="/book-cart" component={BookCart} />
+          <Route path="/book-cart" component={Cart} />
           <Route path="/book/details/:id" component={BookDetails} />
         </Switch>
       </div>

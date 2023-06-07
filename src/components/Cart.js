@@ -3,7 +3,7 @@ import { Context } from "../context/Context";
 import BookCartItem from "./BookCartItem";
 import BookCartCheckOut from "./BookCartCheckOut";
 
-const BookCart = () => {
+const Cart = () => {
   const { carts } = useContext(Context);
 
   if (carts.length === 0) {
@@ -27,4 +27,4 @@ const BookCart = () => {
   }
 };
 
-export default BookCart;
+export default Cart;

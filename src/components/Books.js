@@ -20,9 +20,11 @@ const Books = () => {
             <span onClick={() => clearSearch()} class="btn btn-danger ml-2">
               X
             </span>
+            
           </Fragment>
         )}
       </h1>
+      
 
       <div className="row">
         {searchedBooks.length === 0
