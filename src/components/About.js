@@ -13,7 +13,7 @@ const About = () => {
         setMarkDownText(text);
       });
 
-    document.title = "About || React BookStore App";
+    document.title = "About || React Book App";
   }, []);
 
   return (
