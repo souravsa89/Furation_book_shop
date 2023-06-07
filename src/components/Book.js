@@ -38,7 +38,7 @@ const Book = ({ bookDetails }) => {
             <p>
               <i className="fa fa-star"></i> {rating}
             </p>
-            <h4>Price: ${price}</h4>
+            <h4>Price:₹{price}</h4>
           </div>
         </div>
       </div>

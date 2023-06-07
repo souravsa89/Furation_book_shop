@@ -44,7 +44,7 @@ const BookDetails = () => {
 
             <p>{description}</p>
 
-            <h4>Price: ${price}</h4>
+            <h4>Price: ₹{price}</h4>
 
             <button
               style={{ fontSize: "1.3rem" }}
